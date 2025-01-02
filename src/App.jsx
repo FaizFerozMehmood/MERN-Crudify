@@ -7,6 +7,8 @@ import {url} from "./AppRoutes.jsx"
 
 
 function App() {
+  console.log(url);
+  
   // const apiUrl = process.env.API_URL
   // console.log("apiurl",apiUrl);
   
