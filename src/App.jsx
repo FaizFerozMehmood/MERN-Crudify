@@ -19,14 +19,14 @@ function App() {
   const [isEditMode, setIsEditMode] = useState(false); 
   const [currentUserId, setCurrentUserId] = useState(null);
 
-  // User credentials object
+  // User creDentials 
   let userCredentials = {
     email,
     password,
     userName,
   };
 
-  // Add or Update User
+  // ADd or UPdate User
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -55,7 +55,6 @@ function App() {
         setUserData((prevData) => [...prevData, response.data?.data]);
         toast.success("User added successfully!");
       }
-      // Clearing form and reset mode
       setEmail("");
       setPassword("");
       setUserName("");
@@ -98,7 +97,7 @@ function App() {
     }
   };
 
-  // Fetching users data from backend
+  // Fetching uSers data from backend
   async function getData() {
     try {
       const response = await axios.get(url.myApiUrl);
